@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #faf0f0;
+}
+
+header{
+    background-color: #681d28;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    
+    .pageLinks{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        li{
+            list-style: none;
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    h1{
+        font-family: 'Cinzel', serif;
+    }
+}
