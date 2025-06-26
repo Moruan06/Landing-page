@@ -21,6 +21,8 @@ header{
     height: 10vh;
     align-items: center;
     padding: 0 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+
     .pageLinks{
         display: flex;
         gap: 20px;
@@ -60,7 +62,6 @@ main{
 .imagemHotel{
     width:100%;
     transform: scaleX(-1);
-    
 }
 
 #quartos{
@@ -85,6 +86,12 @@ main{
     div{
         height: 300px;
         width: 300px;
+        transition: transform 0.3s ease-in-out;
+        
+        :hover{
+            transform: scale(1.05);
+            transition: transform 0.3s ease-in-out;
+        }
 
         img{
             border: 2px solid white;
@@ -97,7 +104,7 @@ main{
 }
 
 #depoimentos {
-  padding: 40px;
+  padding: 15vh 0;
   text-align: center;
 }
 
@@ -108,16 +115,31 @@ main{
 
 .comentarios {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 .comentario {
-  width: 250px;
+  flex: 1 1 300px;
+  max-width: 300px;
   background-color: #fff;
   border-left: 4px solid var(--cor-principal);
   padding: 20px;
   font-style: italic;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+footer{
+    background-color: var(--cor-principal);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    margin-top: 20px;
+    p{
+        margin-top: 10px;
+    }
 }
