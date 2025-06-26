@@ -44,7 +44,7 @@ main{
     margin: 0 20px;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .apresentacao{
@@ -65,8 +65,7 @@ main{
 
 #quartos{
     background-color: var(--cor-principal);
-    width: 100vw;
-    padding: 40px;
+    padding: 40px 0;
     box-shadow: #000 0px 0px 10px;
 
     h1{
@@ -81,7 +80,6 @@ main{
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        
     }
 
     div{
@@ -98,3 +96,28 @@ main{
     }
 }
 
+#depoimentos {
+  padding: 40px;
+  text-align: center;
+}
+
+#depoimentos h1 {
+  font-family: 'Cinzel', serif;
+  margin-bottom: 30px;
+}
+
+.comentarios {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.comentario {
+  width: 250px;
+  background-color: #fff;
+  border-left: 4px solid var(--cor-principal);
+  padding: 20px;
+  font-style: italic;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
